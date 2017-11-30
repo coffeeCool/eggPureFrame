@@ -1,20 +1,15 @@
-import utils from '../config/config.default.coffee'
-
 module.exports = (app) ->
-
   class TodosService extends app.Service
-
     constructor: (ctx) ->
       super ctx
-      @root = utils.source.leanCloud.uri
-      # 返回this用于以后的链式调用
+      @root = 'xxx'
       @
 
     request: (url, opts) ->
       url = "#{@root}#{url}"
       opts = {
         headers: {
-          utils.source.leanCloud.headers...
+          xxxheaders...
           (
             do ->
               if opts?.headers_extra?

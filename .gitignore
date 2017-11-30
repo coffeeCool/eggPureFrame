@@ -21,3 +21,5 @@ yarn.lock
 yarn*log
 .yarn*
 
+run*
+.vscode
