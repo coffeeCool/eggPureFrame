@@ -1,4 +1,4 @@
-module.exports = (app) ->
+export default (app) ->
 
   class TodosController extends app.Controller
     constructor: (ctx) ->
@@ -7,7 +7,4 @@ module.exports = (app) ->
 
     # API
     
-      
-  
-
   return TodosController

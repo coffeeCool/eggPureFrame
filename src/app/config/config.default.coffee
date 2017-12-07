@@ -1,5 +1,5 @@
 # 公共的一些配置信息
-exports.source =
+export default
 
   myService:
     key2: 'value2'

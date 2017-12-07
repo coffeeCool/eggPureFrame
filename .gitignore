@@ -22,4 +22,5 @@ yarn*log
 .yarn*
 
 run*
+log*
 .vscode

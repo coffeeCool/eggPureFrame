@@ -2,7 +2,7 @@
   "name": "eggPureFrame",
   "version": "1.0.0",
   "author": "hewentao <429343576@qq.com>",
-  "description": "egg pure frame",
+  "description": "egg pure frame with coffeescript",
   "private": true,
   "dependencies": {
     "coffeescript": "^2.0.1",

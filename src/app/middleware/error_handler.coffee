@@ -1,4 +1,4 @@
-module.exports = (option, app) ->
+export default (option, app) ->
   (ctx, next) ->
     try
       await next()

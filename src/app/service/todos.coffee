@@ -1,4 +1,4 @@
-module.exports = (app) ->
+export default (app) ->
   class TodosService extends app.Service
     constructor: (ctx) ->
       super ctx
@@ -21,5 +21,4 @@ module.exports = (app) ->
       }
       await @ctx.curl url, opts
 
-    # API
     
