@@ -20,5 +20,3 @@ export default (app) ->
         opts...
       }
       await @ctx.curl url, opts
-
-    

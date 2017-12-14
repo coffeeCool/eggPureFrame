@@ -8,4 +8,3 @@ export default (appInfo) ->
       enable: false
 
   config
-

@@ -5,6 +5,8 @@ export default (app) ->
       super ctx
       @
 
-    # API
+    test: (params) ->
+      { ctx } = @
+      ctx.body = 'Hello, world!!!'
     
   return TodosController

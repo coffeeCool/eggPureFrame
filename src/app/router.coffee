@@ -1,4 +1,4 @@
 export default (app) ->
-  # 路由
+  app.get '/test', app.controller.todos.test
 
   return
