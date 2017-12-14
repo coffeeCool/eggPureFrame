@@ -1,15 +1,17 @@
+import config from '../config/config.default'
+
 export default (app) ->
   class TodosService extends app.Service
     constructor: (ctx) ->
       super ctx
-      @root = 'xxx'
+      @root = config.myService.uri
       @
 
     request: (url, opts) ->
       url = "#{@root}#{url}"
       opts = {
         headers: {
-          xxxheaders...
+          config.myService.headers...
           (
             do ->
               if opts?.headers_extra?

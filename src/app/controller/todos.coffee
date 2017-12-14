@@ -5,7 +5,7 @@ export default (app) ->
       super ctx
       @
 
-    test: (params) ->
+    test: ->
       { ctx } = @
       ctx.body = 'Hello, world!!!'
     

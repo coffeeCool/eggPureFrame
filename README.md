@@ -1,1 +1,1 @@
-# egg pure frame with coffeescript
+# 关于coffeescript的egg框架 自用版和官方不同
