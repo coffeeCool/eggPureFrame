@@ -23,7 +23,7 @@ export default config = do ->
           "#{config.baseUri.local_uri}/todos"
       method: 'GET'
 
-  # 如果有其他拓展 自行添加 比如:
+  # 如果有其他拓展 自行添加 比如 className
   className =
     name: 'Todos'
 

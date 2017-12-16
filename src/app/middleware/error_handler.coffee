@@ -10,7 +10,7 @@ export default (option, app) ->
         then 'Internal Server Error'
         else err.message
 
-      ctx.body ={
+      ctx.body = {
         error
       }
       if status is 422
