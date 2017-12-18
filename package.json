@@ -8,8 +8,6 @@
     "dev": "egg-bin dev"
   },
   "dependencies": {
-    "axios": "^0.17.1",
-    "coffeescript": "^2.0.1",
     "cookie": "^0.3.1",
     "egg": "^2.0.0",
     "egg-bin": "^4.3.3",
@@ -20,7 +18,9 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "coffee-require": "^0.0.3",
+    "coffeescript": "^2.0.1",
+    "axios": "^0.17.1",
+    "coffee-require": "^0.0.4",
     "ddeyes": "^0.0.4",
     "shelljs": "^0.7.8"
   }

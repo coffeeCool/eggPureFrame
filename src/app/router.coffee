@@ -1,4 +1,4 @@
 export default (app) ->
-  app.get '/test', app.controller.todos.test
+  app.get '/', app.controller.todos.test
 
   return

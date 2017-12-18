@@ -1,1 +1,1 @@
-# 关于coffeescript的egg框架 自用版和官方不同
+# 关于coffeescript的egg框架 团队自用版和官方不同
