@@ -14,27 +14,30 @@ export default config = do ->
         }
       }
 
-  baseUri = 
-    online_uri: "https://xY1g1Vfw.api.lncld.net/1.1/classes"
-    local_uri: "http://192.168.0.192:7001"
-
-  Todos = 
+  Todos =
     reload:
       uri:
         online: ->
-          "#{baseUri.online_uri}/#{className.name}"
+          "#{config.baseUri.online_uri}/#{className.name}"
         local: ->
-          "#{baseUri.local_uri}/todos"
+          "#{config.baseUri.local_uri}/todos"
       method: 'GET'
 
   # 如果有其他拓展 自行添加 比如:
   className =
     name: 'Todos'
 
+  _headers:
+    baseHeader: header.base
+    masterHeader: header.master
+
+  baseUri:
+    online_uri: "https://xY1g1Vfw.api.lncld.net/1.1/classes"
+    local_uri: "http://192.168.0.192:7001"
+    
   # localhost
   local:
     reload:
-      className: className.name
       headers: header.base
       uri: Todos.reload.uri.local
       method: Todos.reload.method
@@ -46,4 +49,3 @@ export default config = do ->
       headers: header.base
       uri: Todos.reload.uri.online
       method: Todos.reload.method
-

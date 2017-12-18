@@ -5,8 +5,12 @@ export default (app) ->
       super ctx
       @
 
-    test: ->
+    home: ->
       { ctx } = @
       ctx.body = 'Hello, world!!!'
     
+    reload: ->
+      { ctx } = @
+      ctx.body = await ctx.service.todos.reload ctx.request.body
+
   return TodosController

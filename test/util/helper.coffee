@@ -23,4 +23,4 @@ export default toolFuc = (
     ) 
 
   .catch (error) ->
-    dd error
+    # dd error
