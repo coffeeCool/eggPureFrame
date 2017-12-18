@@ -1,7 +1,7 @@
 # 公共的一些配置信息
 export default config = do ->
   header = 
-    todos: do ->
+    do ->
       base = 
         'Content-Type': 'application/json'
         'X-LC-Id': 'xY1g1VfwXDcyrMLI0UWUjmKe-gzGzoHsz'
@@ -35,7 +35,7 @@ export default config = do ->
   local:
     reload:
       className: className.name
-      headers: header.todos.base
+      headers: header.base
       uri: Todos.reload.uri.local
       method: Todos.reload.method
 
@@ -43,7 +43,7 @@ export default config = do ->
   lc:
     reload:
       className: className.name
-      headers: header.todos.base
+      headers: header.base
       uri: Todos.reload.uri.online
       method: Todos.reload.method
 
