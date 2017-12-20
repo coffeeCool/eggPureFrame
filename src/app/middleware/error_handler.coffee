@@ -17,4 +17,3 @@ export default (option, app) ->
         ctx.body.detail = err.errors
 
       ctx.status = status
-        

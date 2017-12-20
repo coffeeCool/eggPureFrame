@@ -13,7 +13,6 @@
     "egg-bin": "^4.3.3",
     "egg-validate": "^1.0.0",
     "egg-view-nunjucks": "^2.1.4",
-    "supertest": "^3.0.0",
     "tape": "^4.8.0"
   },
   "license": "MIT",
