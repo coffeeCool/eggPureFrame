@@ -2,4 +2,4 @@
 
 require('coffee-require/register');
 
-module.exports = require('../../src/app/service/todos');
+module.exports = require('../../src/app/service/todos.coffee');

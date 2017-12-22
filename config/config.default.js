@@ -2,4 +2,4 @@
 
 require('coffee-require/register');
 
-module.exports = require('../src/config/config.default');
+module.exports = require('../src/config/config.default.coffee');
