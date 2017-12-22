@@ -29,4 +29,5 @@ export default (app) ->
       ,
         method: 'get'
 
-      result.data
+      buf = new Buffer result.data
+      buf.toString()
