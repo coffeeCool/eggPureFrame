@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "egg-bin dev",
-    "copyFolder": "coffee copyFolder.coffee"
+    "autoFile": "coffee copyFolder.coffee"
   },
   "dependencies": {
     "cookie": "^0.3.1",
