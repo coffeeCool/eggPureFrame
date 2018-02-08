@@ -5,8 +5,7 @@
   "description": "egg pure frame with coffeescript",
   "private": true,
   "scripts": {
-    "dev": "egg-bin dev",
-    "autoFile": "coffee copyFolder.coffee"
+    "dev": "coffee copyFolder.coffee; egg-bin dev"
   },
   "dependencies": {
     "cookie": "^0.3.1",

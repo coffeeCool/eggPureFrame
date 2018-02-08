@@ -19,7 +19,9 @@ stat = (_src, _dst, prefix) ->
     if err
       throw err
     if st.isFile()
-      text = fs.readFileSync('./template.coffee').toString()
+      text = """'use strict';
+        require('coffee-require/register');
+        module.exports = require('targetPath');"""
       text = text.replace(/targetPath/g, "#{prefix}#{_src}")
       reg = /.coffee/gi
       new_dst = _dst.replace(reg, '.js')
