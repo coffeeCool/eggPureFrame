@@ -5,6 +5,7 @@ readdir = (fromPath, toPath) ->
   fs.readdir fromPath, (err, paths) ->
     if err
       throw err
+    paths = check paths, ['util']
     paths.forEach (eachPath) ->
       _src = path.join "#{fromPath}", "#{eachPath}"
       _dst = path.join "#{toPath}", "#{eachPath}"
@@ -44,6 +45,13 @@ exists = (src, dst, callback) ->
         return
     return
   return
+
+check = (arr, params) ->
+  for i in [0...params.length]
+    index = arr.indexOf params[i]
+    if index > -1
+      arr.splice index, 1
+  arr
 
 copy = (fromPath, toPath) ->
   readdir fromPath, toPath

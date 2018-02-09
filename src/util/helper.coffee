@@ -1,15 +1,16 @@
 import axios from 'axios'
 import dd from 'ddeyes'
 
-export default toolFuc = (
+export default request = (
   uri
   {
     method
     headers
-    data= ''
+    data = ''
   }
   
 ) ->
+
   axios
     method: method
     headers: headers

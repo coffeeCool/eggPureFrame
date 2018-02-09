@@ -28,6 +28,6 @@ export default (app) ->
       result = await @request ""
       ,
         method: 'get'
+        dataType: 'json'      
 
-      buf = new Buffer result.data
-      buf.toString()
+      result.data
