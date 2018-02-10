@@ -12,7 +12,7 @@ readdir = (fromPath, toPath) ->
       num = (_src.split '/').length - 1
       prefix = [1...num].reduce (r) ->
         "../#{r}"
-      , ''
+      , './'
       stat _src, _dst, prefix
 
 stat = (_src, _dst, prefix) ->
@@ -60,5 +60,5 @@ copyFileFolder = (fromPath, toPath) ->
   copy fromPath, toPath
   exists fromPath, toPath, copy
 
-# 调用复制目录copyFileFolder接口传入 fromPath 和 toPath 在此传参
+# 接口传入 fromPath 和 toPath 在此传参
 copyFileFolder './src', './'
